@@ -1,6 +1,4 @@
-// pages/profile/profile.js
-const app = getApp()
-
+// pages/reservationdetail/reservationdetail.js
 Page({
 
   /**
@@ -10,29 +8,11 @@ Page({
 
   },
 
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo
-    })
-    console.log(this.data.userInfo)
-    const userData = this.data.userInfo
-    wx.request({
-      url: `http://localhost:3000/api/v1/users/${getApp().globalData.user.id}`,
-      data:{name:userData.nickName, avatar: userData.avatarUrl},
-      method: 'PUT',
-      success(res){
-        console.log(res)
-      }
-    })
-  },
-
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+
   },
 
   /**

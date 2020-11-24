@@ -1,2 +1,22 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="body">
+    <view class="user-card">
+      <view class="user-profile">
+        <image class="profile-image" src="https://picsum.photos/150" />
+      </view>
+      <view class="user-info">
+        <view class="h2">Ashkan</view>
+        <text class="user-detail">Male</text>
+      </view>
+      <view class="user-settings">
+        <text>Text</text>
+      </view>
+    </view>
+
+    <view class="options">
+      <navigator class="profile-options" href="#">My Reservations</navigator>
+      <navigator class="profile-options" href="#">My Caterings</navigator>
+    </view>
+
+    <button class="profile-card-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+</view>
