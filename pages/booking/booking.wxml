@@ -1,2 +1,8 @@
 <!--pages/booking/booking.wxml-->
 <text>pages/booking/booking.wxml</text>
+<view class= "page">
+  <view class="_panel">
+    
+  </view>
+
+</view>
