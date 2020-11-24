@@ -16,7 +16,18 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
+    console.log(this.data.userInfo)
+    const userData = this.data.userInfo
+    wx.request({
+      url: `http://localhost:3000/api/v1/users/${getApp().globalData.user.id}`,
+      data:{name:userData.nickName, avatar: userData.avatarUrl},
+      method: 'PUT',
+      success(res){
+        console.log(res)
+      }
+    })
   },
+
 
   /**
    * Lifecycle function--Called when page load
