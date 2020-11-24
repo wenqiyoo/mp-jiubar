@@ -1,4 +1,6 @@
 // pages/profile/profile.js
+const app = getApp()
+
 Page({
 
   /**
@@ -8,11 +10,18 @@ Page({
 
   },
 
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
   },
 
   /**
