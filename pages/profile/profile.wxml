@@ -1,2 +1,3 @@
 <!--pages/profile/profile.wxml-->
 <text>pages/profile/profile.wxml</text>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
