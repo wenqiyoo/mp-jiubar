@@ -4,7 +4,7 @@
     "pages/logs/logs",
     "pages/listing/listing",
     "pages/show/show",
-    "pages/create/create",
+    "pages/new/new",
     "pages/profile/profile",
     "pages/myReservation/myReservation",
     "pages/myCatering/myCatering",

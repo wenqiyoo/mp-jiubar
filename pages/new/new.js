@@ -1,4 +1,4 @@
-// pages/create/create.js
+// pages/new/new.js
 Page({
 
   /**
