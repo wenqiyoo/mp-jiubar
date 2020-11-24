@@ -8,7 +8,8 @@
     "pages/profile/profile",
     "pages/myReservation/myReservation",
     "pages/myCatering/myCatering",
-    "pages/booking/booking"
+    "pages/booking/booking",
+    "pages/reservationdetail/reservationdetail"
 
   ],
   "window":{
