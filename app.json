@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/listing/listing",
-    "pages/detail/detail",
+    "pages/show/show",
     "pages/create/create",
     "pages/profile/profile",
     "pages/myReservation/myReservation",
