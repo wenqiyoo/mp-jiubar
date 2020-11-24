@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <input type="text" placeholder="Search"/>
     <view class="h1">Welcome to Jiubar!</view>
     <text>It's a landing page</text>
     <navigator bindtap="goToStories" class="btn" url="#">Click!</navigator>
