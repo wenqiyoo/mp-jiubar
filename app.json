@@ -1,7 +1,15 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/listing/listing",
+    "pages/detail/detail",
+    "pages/create/create",
+    "pages/profile/profile",
+    "pages/myReservation/myReservation",
+    "pages/myCatering/myCatering",
+    "pages/booking/booking"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
