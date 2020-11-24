@@ -39,7 +39,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
   "appid": "wx51495c831ed15831",
-  "projectname": "jiubar",
+  "projectname": "mp-jiubar",
   "debugOptions": {
     "hidedInDevtools": []
   },
