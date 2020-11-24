@@ -34,6 +34,22 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    globalData: {
+      userInfo: null,
+      cards:[
+        {title: "Hello",
+        image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2020%2F07%2F30%2Fbest-shopping-apps-2020-2000.jpg",
+        content:"I am so sleepy",
+        },
+        {title: "OMG",
+        image:"https://images.pexels.com/photos/963486/pexels-photo-963486.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        content: "I wanna go home",
+        },
+        {title: "Really",
+        image:"https://i.pinimg.com/originals/fb/ab/c8/fbabc8477c32b5a32711e52959381513.png",
+        content: "I am going home",
+        },      
+      ]
+    }
   }
 })
