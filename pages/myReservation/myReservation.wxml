@@ -1,2 +1,25 @@
-<!--pages/myReservation/myReservation.wxml-->
-<text>pages/myReservation/myReservation.wxml</text>
+<view class="h0">My Reservations</view>
+
+<view class="card-product">
+  <image mode="aspectFill" src="https://www.petitehaus.com/wp-content/uploads/2019/10/Charcuterie-Board-21.jpg"/>
+  <view class="card-product-infos">
+    <view>
+      <view class="h1">Title here</view>
+      <text>Short description here!</text>
+    </view>
+    <view class="card-pricing">£69.99</view>
+    <button class="btn-flat" bindtap="">Cancel/Change</button>
+    </view>
+  </view>
+  <view class="card-product">
+    <image mode="aspectFill" src="https://i.pinimg.com/564x/0d/c0/ae/0dc0ae65383b4c838892d2335a60e519.jpg"/>
+  <view class="card-product-infos">
+    <view>
+      <view class="h1">Title here</view>
+      <text>Short description here!</text>
+    </view>
+    <view class="card-pricing">£129.99</view>
+    <button type="" class="btn-ghost" bindtap="">Cancel/Change</button>
+
+    </view>
+  </view>
