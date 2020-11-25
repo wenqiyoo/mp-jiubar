@@ -9,9 +9,37 @@
     "pages/myReservation/myReservation",
     "pages/myCatering/myCatering",
     "pages/booking/booking",
-    "pages/reservationdetail/reservationdetail"
-
+    "pages/reservationdetail/reservationdetail",
+    "pages/tabOne/tabOne",
+    "pages/tabTwo/tabTwo",
+    "pages/tabThree/tabThree"
   ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      { 
+        "selectedIconPath": "img/home.png",  
+        "iconPath": "img/home.png",     
+        "pagePath": "pages/index/index",
+        "text": "home"
+    },
+    {
+      "selectedIconPath": "img/add.png",
+      "iconPath": "img/add.png",
+      "pagePath": "pages/new/new",
+      "text": "ADD"
+    },
+  
+    {
+      "selectedIconPath": "img/home.png",
+      "iconPath": "img/home.png",
+      "pagePath": "pages/profile/profile",
+      "text": "Profile"  
+    }],
+    "position": "bottom"
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
@@ -21,3 +49,5 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
+
+
