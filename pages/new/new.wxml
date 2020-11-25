@@ -1,5 +1,52 @@
 <!--pages/new/new.wxml-->
-<text>pages/new/new.wxml</text>
-<form>
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset"> 
+      <view class="page-section-title">Title</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="input" placeholder="cheesecakes" />
+            </view>
+          </view>
+        </view>
+      </form>
+      </view>
 
-</form>
+      <view class="page-section">
+        <view class="page-section-title">Description</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="input" placeholder="20 mini cheesecakes with assorted berries." />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">Address</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="input" placeholder="West Yan'an Road" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">Price</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="input" placeholder="RMB299" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="btn-area" bindtap="switchToIndex">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">Create</button>
+        <button style="margin: 30rpx 0" formType="reset">Reset</button>
+      </view>
+      </view>

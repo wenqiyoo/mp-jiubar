@@ -72,8 +72,9 @@
           "scene": null
         },
         {
-          "name": "catering",
-          "pathName": "pages/show/show",
+          "name": "pages/new/new",
+          "pathName": "pages/new/new",
+          "query": "",
           "scene": null
         }
       ]
