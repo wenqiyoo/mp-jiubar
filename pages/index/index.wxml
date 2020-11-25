@@ -8,7 +8,7 @@
 <view class="h2">Daily Special</view>
 <view wx:for="{{ caterings }}" wx:for-item="catering">
 <view class="card-product" bindtap="switchToShow" data-id="{{catering.id}}">
-  <image mode="aspectFill" src="https://i.pinimg.com/564x/f9/c4/d0/f9c4d00349782efdf9280f865d439e83.jpg"/>
+  <image mode="aspectFill" src="https://picsum.photos/600"/>
   <view class="card-product-infos">
     <view>
       <view class="h1">{{ catering.title}}</view>
