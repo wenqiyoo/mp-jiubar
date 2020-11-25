@@ -15,7 +15,22 @@ Page({
       url: '../logs/logs'
     })
   },
+  clickMe: function () {
+    this.setData({ text: "" })
+  },
+
+  switchToShow: function(event) {
+    const id = event.currentTarget.dataset.id
+    console.log(id)
+    wx.navigateTo({
+      url: `/pages/show/show?id=${id}`,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   onLoad: function () {
+    const page = this
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -41,7 +56,18 @@ Page({
           })
         }
       })
-    }
+    };
+ // Here is where you do the api call for all the caterings
+    wx.request({
+      url: 'http://localhost:3000/api/v1/caterings',
+      method: 'GET',
+      success(res) {
+        console.log(res)
+        const caterings = res.data
+        page.setData({caterings})
+
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
