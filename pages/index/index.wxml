@@ -6,25 +6,16 @@
 <view class="container">
 
 <view class="h2">Daily Special</view>
-
-<view class="card-product">
-  <image mode="aspectFill" src="https://images.unsplash.com/photo-1524932326868-56e1f1ede465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+<view wx:for="{{ caterings }}" wx:for-item="catering">
+<view class="card-product" bindtap="switchToShow" data-id="{{catering.id}}">
+  <image mode="aspectFill" src="https://picsum.photos/600"/>
   <view class="card-product-infos">
     <view>
-      <view class="h1">Title here</view>
-      <text>Short description here!</text>
+      <view class="h1">{{ catering.title}}</view>
+      <text>{{catering.description}}</text>
     </view>
-    <view class="card-pricing">£99.99</view>
-    </view>
-  </view>
-  <view class="card-product">
-    <image mode="aspectFill" src="https://images.unsplash.com/photo-1524932326868-56e1f1ede465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
-  <view class="card-product-infos">
-    <view>
-      <view class="h1">Title here</view>
-      <text>Short description here!</text>
-    </view>
-    <view class="card-pricing">£99.99</view>
+    <view class="card-pricing">RMB {{catering.price}}</view>
     </view>
   </view>
+</view>
 </view>

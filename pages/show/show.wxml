@@ -1,41 +1,30 @@
 <!--pages/show/show.wxml-->
 <view class="hero-banner">
-    <view class="h1">Cocktail Catering</view>
+    <view class="h1">{{title}}</view>
 </view>
 
 <view class="container">
   <view class="catering-info">
-    <view class="h2">Cocktail Catering</view>
+    <view class="h2">{{title}}</view>
     <view class="address">
       <view class="address-text">
-        17 Yan'an Dong Lu, near Sichuan Nan Lu
-        延安东路17号, 近四川南路
+        {{address}}
+        {{photos[0]}}
       </view>
       <view class="address-arrow">
         Map
       </view>
     </view>
     <view class="description">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, at? Nobis reiciendis atque velit autem laboriosam ipsa porro neque eveniet.
+      {{description}}
     </view>
   </view>
-
-<view class="empty-section">
-  <view class="description">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, at? Nobis reiciendis atque velit autem laboriosam ipsa porro neque eveniet.
-    </view>
-    <view class="description">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, at? Nobis reiciendis atque velit autem laboriosam ipsa porro neque eveniet.
-    </view>
-
-
-</view>
 </view>
 <view class="navbar">
   <view>
   <view class="book-bar">
     <view>
-      <view>RMB 299.99</view>
+      <view>RMB {{price}}</view>
     </view>
     <view>
       <button>Check Availability</button>

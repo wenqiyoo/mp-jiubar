@@ -1,6 +1,7 @@
 /* pages/show/show.wxss */
 .hero-banner {
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url(https://picsum.photos/600);
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dioxzidenl/image/upload/v1606032211/c18otytbuwegzgf5lqengbtgqvae.jpg);
+  background-size: cover;
   height: 350rpx;
   border-radius: 0 0 15rpx 15rpx;
   display: flex;
@@ -26,6 +27,7 @@
 .address {
   margin: 20rpx 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .address-text {
@@ -48,7 +50,13 @@
   color: white;
   background-color: #4C95FB ;
 }
-
+/* 
 .empty-section {
   height: 200px;
+} */
+
+.navbar {
+  position: fixed;
+  bottom: 20px;
+  min-width: 100%;
 }

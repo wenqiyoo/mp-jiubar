@@ -12,6 +12,19 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log(options)
+    const id = options.id
+    let page = this
+    wx.request({
+      url: `http://localhost:3000/api/v1/caterings/${id}`,
+      method: 'GET',
+      success(res){
+        console.log(res)
+        const content = res.data
+        console.log(content)
+        page.setData(content)
+      }
+    })
 
   },
 
