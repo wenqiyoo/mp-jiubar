@@ -1,4 +1,4 @@
-<!--pages/listing/listing.wxml-->
+<!-- pages/listing/listing.wxml
 <text>pages/listing/listing.wxml</text>
 <view class="page">
   <view class = "weui-search-bar">
@@ -9,4 +9,25 @@
     </view>
     <view class = "weui-search-bar_btn" bindtap = "goToStories" url="#">Submit</view>
   </view>
-</view>
+  <view class="card-product">
+    <image mode="aspectFill" src="https://images.unsplash.com/photo-1524932326868-56e1f1ede465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+    <view class="card-product-infos">
+      <view>
+        <view class="h1">Title here</view>
+        <text>Short description here!</text>
+      </view>
+      <view class="card-pricing">£99.99</view>
+      </view>
+    </view>
+    <view class="card-product">
+      <image mode="aspectFill" src="https://images.unsplash.com/photo-1524932326868-56e1f1ede465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+    <view class="card-product-infos">
+      <view>
+        <view class="h1">Title here</view>
+        <text>Short description here!</text>
+      </view>
+      <view class="card-pricing">£99.99</view>
+      </view>
+    </view>
+  </view>
+</view> -->
