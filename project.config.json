@@ -66,8 +66,8 @@
           "scene": null
         },
         {
-          "name": "show",
-          "pathName": "pages/show/show",
+          "name": "pages/myReservation/myReservation",
+          "pathName": "pages/myReservation/myReservation",
           "scene": null
         }
       ]
