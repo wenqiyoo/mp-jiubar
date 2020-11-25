@@ -59,7 +59,7 @@ Page({
     };
  // Here is where you do the api call for all the caterings
     wx.request({
-      url: 'http://localhost:3000/api/v1/caterings',
+      url: 'http://jiubar.herokuapp.com/api/v1/caterings',
       method: 'GET',
       success(res) {
         console.log(res)

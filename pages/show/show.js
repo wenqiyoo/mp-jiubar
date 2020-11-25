@@ -16,7 +16,7 @@ Page({
     const id = options.id
     let page = this
     wx.request({
-      url: `http://localhost:3000/api/v1/caterings/${id}`,
+      url: `http://jiubar.herokuapp.com/api/v1/caterings/${id}`,
       method: 'GET',
       success(res){
         console.log(res)
