@@ -5,7 +5,20 @@ Page({
    * Page initial data
    */
   data: {
+    btnText: "Create",
+    pickerHidden: true,
+    chosen: ''
+  },
+  formSubmit(e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    console.log(e)
+  },
 
+  formReset(e) {
+    console.log('form发生了reset事件，携带数据为：', e.detail.value)
+    this.setData({
+      chosen: ''
+    })
   },
 
   /**
@@ -61,6 +74,15 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage: function () {
+  },
 
-  }
+  btnclick: function() {
+  this.setData()
+  },
+
+  switchToIndex: function() {
+    wx.navigateTo({
+      url: '/pages/index/index',
+    })
+  },
 })

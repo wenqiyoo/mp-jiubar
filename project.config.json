@@ -68,6 +68,13 @@
         {
           "name": "pages/myReservation/myReservation",
           "pathName": "pages/myReservation/myReservation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/new/new",
+          "pathName": "pages/new/new",
+          "query": "",
           "scene": null
         }
       ]
