@@ -1,7 +1,7 @@
-<!--pages/new/new.wxml-->
+<!-- pages/new/new.wxml
 <view class="container">
   <view class="page-body">
-    <form catchsubmit="formSubmit" catchreset="formReset"> 
+    <form bindsubmit="formSubmit" catchreset="formReset"> 
       <view class="page-section-title">Title</view>
         <view class="weui-cells weui-cells_after-title">
           <view class="weui-cell weui-cell_input">
@@ -49,4 +49,50 @@
         <button style="margin: 30rpx 0" type="primary" formType="submit">Create</button>
         <button style="margin: 30rpx 0" formType="reset">Reset</button>
       </view>
+      </view> -->
+
+      <view class="container">
+<form bindsubmit="formSubmit">
+
+<view class="section">
+    <view class="section__title">Title</view>
+    <input name="title" placeholder="please input title" />
+  </view>
+  <view class="page-section">
+        <view class="page-section-title">Description</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="description" placeholder="20 mini cheesecakes with assorted berries." />
+            </view>
+          </view>
+        </view>
       </view>
+      <view class="page-section">
+        <view class="page-section-title">Address</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="address" placeholder="West Yan'an Road" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">Price</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="price" placeholder="RMB299" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+  <view class="btn-area">
+    <button class="btn-flat" form-type="submit">Submit</button>
+    <button class="btn-flat" form-type="reset">Reset</button>
+  </view>
+</form>
+</view>
