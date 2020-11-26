@@ -62,7 +62,7 @@ Page({
     }
 
     wx.request({
-      url: `http://localhost:3000/api/v1/caterings/${catering_id}/reservations/`,
+      url: `http://jiubar.herokuapp.com/api/v1/caterings/${catering_id}/reservations/`,
       data: reservation,
       method: 'POST',
       success(res) {
