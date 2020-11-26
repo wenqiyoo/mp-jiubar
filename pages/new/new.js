@@ -5,6 +5,8 @@ Page({
    * Page initial data
    */
   data: {
+    imgs: [],
+    picPaths: [],
     btnText: "Create",
     pickerHidden: true,
     chosen: ''
@@ -12,7 +14,7 @@ Page({
   formSubmit: function(event) {
     console.log('form发生了submit事件，携带数据为：', event.detail.value)
     console.log(event)
-    console.log("+++++")
+  
 
     let title = event.detail.value.title;
     console.log(title)
@@ -26,7 +28,8 @@ Page({
       description: description,
       price: price,
       address: address,
-      user_id: user_id
+      user_id: user_id,
+      photo_path: this.data.image
     }
 
     console.log("------")
@@ -35,14 +38,21 @@ Page({
 
     console.log("------")
 
-
+const that = this
     wx.request({
-      url: `http://jiubar.herokuapp.com/api/v1/caterings`,
+      url: `http://localhost:3000/api/v1/caterings`,
       method: 'POST',
       data: catering,
       success(res) {
         // redirect to index page when done
         console.log(res);
+
+        wx.uploadFile({
+          filePath: that.data.image,
+           name: 'img',
+           url: 'http://localhost:3000/api/v1/image',
+         })
+
         wx.showToast({
           title: 'Testt',
         })
@@ -124,4 +134,19 @@ Page({
       url: '/pages/index/index',
     })
   },
-})
+
+  uploadPhoto: function () {
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      success(res) {
+        console.log('image', res)
+        that.setData({ image: res.tempFilePaths[0]})
+      }
+      //var data = res.data
+      
+    })
+  },
+ 
+}
+)

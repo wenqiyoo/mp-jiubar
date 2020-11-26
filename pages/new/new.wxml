@@ -88,7 +88,13 @@
           </view>
         </view>
       </view>
+  
+      <image src="{{image}}"></image>
 
+      <view class="container">
+    <button bindtap='uploadPhoto'>Upload Your Image</button>
+  </view>
+  
 
   <view class="btn-area">
     <button class="btn-flat" form-type="submit">Submit</button>
