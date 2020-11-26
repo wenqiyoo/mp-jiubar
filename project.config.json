@@ -76,6 +76,11 @@
           "pathName": "pages/new/new",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "mycaterings",
+          "pathName": "pages/myCatering/myCatering",
+          "scene": null
         }
       ]
     }
