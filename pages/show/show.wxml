@@ -27,7 +27,7 @@
       <view>RMB {{price}}</view>
     </view>
     <view>
-      <button>Check Availability</button>
+      <button bindtap="gotobooking" data-id="{{id}}">Check Availability</button>
     </view>
   </view>
 </view>

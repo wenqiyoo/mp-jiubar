@@ -40,9 +40,41 @@ Page({
   },
 
   formSubmit: function(event) {
-    console.log(event)
-  }
-  ,
+    const data = event.detail.value
+    console.log(data, this.options.id)
+    const user_id = getApp().globalData.user.id
+    console.log(user_id)
+
+    let date = data.date
+    let time = data.startTime
+    let endTime = data.endTime
+    let comments = data.description
+    let catering_id = Number.parseInt(this.options.id,10)
+    let userInfo = user_id
+
+    let reservation = {
+      date: date,
+      time: time,
+      end_time: endTime,
+      comments: comments,
+      catering_id: catering_id,
+      user_id: userInfo
+    }
+
+    wx.request({
+      url: `http://localhost:3000/api/v1/caterings/${catering_id}/reservations/`,
+      data: reservation,
+      method: 'POST',
+      success(res) {
+        console.log(res)
+
+        wx.switchTab({
+          url: '/pages/profile/profile',
+        })
+      }
+
+    })
+  },
   bindTimeChange1: function(e) {
     console.log('pickerA selection change is sent, carrying the value ', e.detail.value)
     this.setData({
