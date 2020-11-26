@@ -29,7 +29,6 @@ Page({
     console.log(event.detail.value)
     let page = this
     const query = event.detail.value
-    if (query.length > 0) {
     wx.request({
       url: `http://jiubar.herokuapp.com/api/v1/caterings?query=${query}`,
       success(res) {
@@ -37,11 +36,7 @@ Page({
         const caterings = res.data.caterings
         page.setData({caterings})
       }
-    })} else {
-      wx.reLaunch({
-        url: '/pages/index/index',
-      })
-    }
+    })
   },
 
   switchToShow: function(event) {
