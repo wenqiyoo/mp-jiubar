@@ -1,5 +1,5 @@
 <!--pages/show/show.wxml-->
-<view class="hero-banner">
+<view class="hero-banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url({{photos[0]}})">
     <view class="h1">{{title}}</view>
 </view>
 

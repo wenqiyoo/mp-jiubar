@@ -28,8 +28,7 @@ Page({
       description: description,
       price: price,
       address: address,
-      user_id: user_id,
-      photo_path: this.data.image
+      user_id: 1
     }
 
     console.log("------")
@@ -40,7 +39,7 @@ Page({
 
 const that = this
     wx.request({
-      url: `http://localhost:3000/api/v1/caterings`,
+      url: `http://jiubar.herokuapp.com/api/v1/caterings`,
       method: 'POST',
       data: catering,
       success(res) {
@@ -48,10 +47,15 @@ const that = this
         console.log(res);
 
         wx.uploadFile({
-          filePath: that.data.image,
+           filePath: that.data.image,
+           formData: { catering_id: res.data.catering.id },
            name: 'img',
-           url: 'http://localhost:3000/api/v1/image',
+           url: 'http://jiubar.herokuapp.com/api/v1/image',
+           success(res){
+             console.log(res)
+           }
          })
+    
 
         wx.showToast({
           title: 'Testt',
