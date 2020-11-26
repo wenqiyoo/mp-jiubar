@@ -12,7 +12,8 @@
     "pages/reservationdetail/reservationdetail",
     "pages/tabOne/tabOne",
     "pages/tabTwo/tabTwo",
-    "pages/tabThree/tabThree"
+    "pages/tabThree/tabThree",
+    "pages/checkout/checkout"
   ],
   "tabBar": {
     "color": "#a9b7b7",

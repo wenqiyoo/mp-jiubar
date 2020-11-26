@@ -1,0 +1,18 @@
+<!--pages/checkout/checkout.wxml-->
+<view class="container">
+<form bindsubmit="formSubmit">
+  <view class="page-section">
+        <view class="page-section-title">Comment</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="description" placeholder="Please put comments according to your request" />
+            </view>
+          </view>
+        </view>
+      </view>
+  <view class="btn-area">
+    <button class="btn-flat" form-type="submit">Submit</button>
+  </view>
+</form>
+</view>

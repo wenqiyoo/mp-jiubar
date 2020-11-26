@@ -1,66 +1,64 @@
-// pages/booking/booking.js
+const date = new Date()
+const years = []
+const months = []
+const days = []
+const time = []
+
+for (let i = 2020; i <= date.getFullYear(); i++) {
+  years.push(i)
+}
+
+for (let i = 1 ; i <= 12; i++) {
+  months.push(i)
+}
+
+for (let i = 1 ; i <= 31; i++) {
+  days.push(i)
+}
+
+for (let i = 1 ; i <= 24; i++) {
+  time.push(i)
+}
+
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
-
+    years: years,
+    year: date.getFullYear(),
+    months: months,
+    month: 2,
+    days: days,
+    day: 2,
+    value: [9999, 1, 1],
+  },
+  bindChange: function(e) {
+    const val = e.detail.value
+    this.setData({
+      year: this.data.years[val[0]],
+      month: this.data.months[val[1]],
+      day: this.data.days[val[2]]
+    })
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
+  formSubmit: function(event) {
+    console.log(event)
+  }
+  ,
+  bindTimeChange1: function(e) {
+    console.log('pickerA selection change is sent, carrying the value ', e.detail.value)
+    this.setData({
+      startTime: e.detail.value
+    })
   },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
+  bindTimeChange2: function(e) {
+    console.log('pickerA selection change is sent, carrying the value ', e.detail.value)
+    this.setData({
+      endTime: e.detail.value
+    })
   },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
+  bindDateChange: function(event) {
+    console.log('pickerA selection change is sent, carrying the value ', event.detail.value)
+    this.setData({
+      date: event.detail.value
+    })
   }
 })

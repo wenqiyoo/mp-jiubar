@@ -1,1 +1,9 @@
 /* pages/booking/booking.wxss */
+.btn-flat {
+  color: white;
+  padding: 18rpx 30rpx;
+  border-radius: 4rpx;
+  width: 150rpx;
+  background: skyblue;
+  transition: background 0.3s ease;
+}
