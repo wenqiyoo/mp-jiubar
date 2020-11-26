@@ -76,6 +76,17 @@
           "pathName": "pages/new/new",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "booking",
+          "pathName": "pages/booking/booking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "checkout",
+          "pathName": "pages/checkout/checkout",
+          "scene": null
         }
       ]
     }
