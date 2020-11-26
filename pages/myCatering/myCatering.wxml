@@ -1,2 +1,17 @@
 <!--pages/myCatering/myCatering.wxml-->
-<text>pages/myCatering/myCatering.wxml</text>
+<view class="container">
+
+<view class="h2">My Caterings</view>
+<view wx:for="{{ caterings }}" wx:for-item="catering">
+<view class="card-product" bindtap="switchToShow" data-id="{{catering.id}}">
+  <image mode="aspectFill" src="https://picsum.photos/600"/>
+  <view class="card-product-infos">
+    <view>
+      <view class="h1">{{ catering.title}}</view>
+      <text>{{catering.description}}</text>
+    </view>
+    <view class="card-pricing">RMB {{catering.price}}</view>
+    </view>
+  </view>
+</view>
+</view>

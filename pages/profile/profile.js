@@ -7,7 +7,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    loggedIn: false
   },
 
   getUserInfo: function (e) {
@@ -18,21 +18,55 @@ Page({
     })
     console.log(this.data.userInfo)
     const userData = this.data.userInfo
+    const id = app.globalData.user.id
+    console.log(id)
+    console.log("------")
+    let page = this
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${getApp().globalData.user.id}`,
+      url: `http://jiubar.herokuapp.com/api/v1/users/${id}`,
       data:{name:userData.nickName, avatar: userData.avatarUrl},
       method: 'PUT',
       success(res){
-        console.log(res)
+        console.log(res.data)
+        const userInfo = res.data
+        page.setData(userInfo)
+        getApp().globalData.user = userInfo
       }
+    }),
+    this.setData({
+      loggedIn: true
     })
   },
+
+switchToCaterings: function(event) {
+  console.log(event)
+  const id = event.currentTarget.dataset.id
+  console.log(id)
+  wx.redirectTo({
+    url: `/pages/myCatering/myCatering?id=${id}`,
+  })
+
+},
 
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log('profile page', getApp().globalData.user)
+    let page = this
+    const user = getApp().globalData.user
+    page.setData(user)
+    // const id = app.globalData.user.id
+    // wx.request({
+    //   url: `http://jiubar.herokuapp.com/api/v1/users/${id}`,
+    //   success(res){
+    //     console.log(res.data)
+    //     const userData = res.data
+    //     console.log("-----")
+    //     page.setData({userData})
+    //   }
+    // })
   },
 
   /**
