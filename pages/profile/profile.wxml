@@ -1,22 +1,25 @@
 <!--pages/profile/profile.wxml-->
 <view class="body">
+  <view wx:if="{{user}}">
     <view class="user-card">
       <view class="user-profile">
-        <image class="profile-image" src="https://picsum.photos/150" />
+        <image class="profile-image" src="{{user.avatar}}" />
       </view>
       <view class="user-info">
-        <view class="h2">Ashkan</view>
-        <text class="user-detail">Male</text>
+        <view class="h2">{{user.name}}</view>
+        <text class="user-detail">{{userInfo.province}}</text>
       </view>
-      <view class="user-settings">
+      <!-- <view class="user-settings">
         <text>Text</text>
-      </view>
+      </view> -->
     </view>
 
     <view class="options">
-      <navigator class="profile-options" href="#">My Reservations</navigator>
-      <navigator class="profile-options" href="#">My Caterings</navigator>
+      <navigator class="profile-options" data-id="{{user.id}}" url="#">My Reservations</navigator>
+      <navigator class="profile-options" data-id="{{user.id}}" bindtap="switchToCaterings" url="#">My Caterings</navigator>
     </view>
-
+  </view>
+  <view wx:else>
     <button class="profile-card-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+  </view>
 </view>

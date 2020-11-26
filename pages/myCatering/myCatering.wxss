@@ -1,1 +1,32 @@
 /* pages/myCatering/myCatering.wxss */
+
+.h2 {
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: left;
+}
+
+text {
+  font-size: 30rpx;
+  opacity: .7;
+}
+
+.card-product {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 10rpx;
+  border-radius: 10rpx;
+  margin-top: 15rpx;
+}
+.card-product > image {
+  height: 100px;
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.card-product-infos {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
