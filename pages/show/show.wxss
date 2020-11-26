@@ -1,6 +1,6 @@
 /* pages/show/show.wxss */
 .hero-banner {
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dioxzidenl/image/upload/v1606032211/c18otytbuwegzgf5lqengbtgqvae.jpg);
+  /* background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dioxzidenl/image/upload/v1606032211/c18otytbuwegzgf5lqengbtgqvae.jpg); */
   background-size: cover;
   height: 350rpx;
   border-radius: 0 0 15rpx 15rpx;

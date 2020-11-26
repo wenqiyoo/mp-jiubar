@@ -85,6 +85,7 @@ Page({
         console.log(res)
         const caterings = res.data.caterings
         page.setData({caterings})
+        console.log(caterings)
 
       }
     })
