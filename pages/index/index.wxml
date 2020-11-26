@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="banner">
-    <input class="search" type="text" placeholder="Search"/>
+   <input class="search" type="text" placeholder="Search Here" value="{{inputval}}" bindinput="inputtyping" bindconfirm="search" />
 </view>
 
 <view class="container">

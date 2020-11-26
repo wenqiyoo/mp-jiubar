@@ -18,6 +18,26 @@ Page({
   clickMe: function () {
     this.setData({ text: "" })
   },
+  inputTyping: function(e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  },
+
+
+  search: function(event) {
+    console.log(event.detail.value)
+    let page = this
+    const query = event.detail.value
+    wx.request({
+      url: `http://localhost:3000/api/v1/caterings?query=${query}`,
+      success(res) {
+        console.log('success?', res)
+        const caterings = res.data.caterings
+        page.setData({caterings})
+      }
+    })
+  },
 
   switchToShow: function(event) {
     const id = event.currentTarget.dataset.id
@@ -59,7 +79,7 @@ Page({
     };
  // Here is where you do the api call for all the caterings
     wx.request({
-      url: 'http://jiubar.herokuapp.com/api/v1/caterings',
+      url: 'http://localhost:3000/api/v1/caterings',
       method: 'GET',
       success(res) {
         console.log(res)
