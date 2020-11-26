@@ -34,7 +34,7 @@
         </view>
       </view>
 </view>
-<button class="btn btn-flat" form-type="submit">Confirm</button>
+<button class="btn btn-flat" form-type="submit" data-id="{{id}}">Confirm</button>
 </form>
 
 

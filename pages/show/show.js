@@ -27,7 +27,13 @@ Page({
     })
 
   },
-
+gotobooking: function(event){
+  console.log(event)
+  const id = event.currentTarget.dataset.id
+  wx.navigateTo({
+    url: `/pages/booking/booking?id=${id}`,
+  })
+},
   /**
    * Lifecycle function--Called when page is initially rendered
    */
