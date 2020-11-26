@@ -29,14 +29,19 @@ Page({
     console.log(event.detail.value)
     let page = this
     const query = event.detail.value
+    if (query.length > 0) {
     wx.request({
-      url: `http://localhost:3000/api/v1/caterings?query=${query}`,
+      url: `http://jiubar.herokuapp.com/api/v1/caterings?query=${query}`,
       success(res) {
         console.log('success?', res)
         const caterings = res.data.caterings
         page.setData({caterings})
       }
-    })
+    })} else {
+      wx.reLaunch({
+        url: '/pages/index/index',
+      })
+    }
   },
 
   switchToShow: function(event) {
@@ -79,7 +84,7 @@ Page({
     };
  // Here is where you do the api call for all the caterings
     wx.request({
-      url: 'http://localhost:3000/api/v1/caterings',
+      url: 'http://jiubar.herokuapp.com/api/v1/caterings',
       method: 'GET',
       success(res) {
         console.log(res)
