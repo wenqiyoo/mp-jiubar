@@ -4,6 +4,30 @@
   padding: 18rpx 30rpx;
   border-radius: 4rpx;
   width: 150rpx;
-  background: skyblue;
+  background:#4C95FB ;
   transition: background 0.3s ease;
+}
+.all {
+  text-align: center;
+}
+.section {
+  margin-top: 50rpx; 
+  margin-bottom: 100rpx;
+  color:#4C95FB ;
+  font-weight: bold;
+}
+.page-section-title {
+  color:#4C95FB ;
+  font-weight: bold;
+}
+.weui-input {
+  margin-bottom: 200rpx;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
 }

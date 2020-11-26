@@ -1,4 +1,7 @@
+<view class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1517093602195-b40af9688b46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+</view>
 <form bindsubmit="formSubmit">
+<view class="all">
 <view class="section">
   <picker mode="date" name="date" value="{{date}}" bindchange="bindDateChange">
     <view class="picker">
@@ -33,6 +36,7 @@
           </view>
         </view>
       </view>
+</view>
 </view>
 <button class="btn btn-flat" form-type="submit" data-id="{{id}}">Confirm</button>
 </form>
