@@ -30,7 +30,7 @@ Page({
       method: 'GET',
       success(res) {
         console.log(res)
-        const caterings = res.data
+        const caterings = res.data.caterings
         page.setData({caterings})
 
       }
