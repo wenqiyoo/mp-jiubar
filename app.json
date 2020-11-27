@@ -35,8 +35,8 @@
     },
   
     {
-      "selectedIconPath": "img/home.png",
-      "iconPath": "img/home.png",
+      "selectedIconPath": "img/profile.png",
+      "iconPath": "img/profile.png",
       "pagePath": "pages/profile/profile",
       "text": "Profile"  
     }],

@@ -1,1 +1,76 @@
 /* pages/new/new.wxss */
+
+.btn-flat {
+  color: white;
+  padding: 18rpx 30rpx;
+  border-radius: 10rpx;
+  width: 150rpx;
+  background:#4C95FB ;
+  transition: background 0.3s ease;
+  margin: 15rpx;
+  font-size: 25rpx;
+}
+.btn-img {
+  padding:10px;
+  color: white;
+  padding: 18rpx 30rpx;
+  border-radius: 10rpx;
+  width: 150rpx;
+  background:#4C95FB ;
+  margin:15rpx;
+  font-size: 25rpx;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+}
+
+.section{
+  color:#4C95FB;
+  font-weight: medium;
+  margin-bottom: 15rpx;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(200,200,200,0.3);
+  padding-top: 0;
+}
+
+.section-input {
+  color:#4C95FB ;
+  font-weight: medium;
+  margin-bottom: 15rpx;
+  text-align: center;
+}
+
+.page-section-title {
+  color:#4C95FB ;
+  font-weight: medium;
+  margin-bottom: 15rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.weui-input {
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.page-section {
+  background-color: white;
+  margin: 0rpx 5rpx 0 5rpx;
+  border-radius: 8px;
+  padding-top: 3px;
+  box-shadow: 0 0 15px rgba(200,200,200,0.3);
+}
+.description{
+  border-radius: 10rpx;
+  height: 400rpx;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(200,200,200,0.3);
+  padding-top: 3px;
+  margin: 0rpx 5rpx 0 5rpx;
+  background-color: white;
+}
+
+image {
+  border-radius: 10rpx;
+  height: 500rpx;
+  width: 500rpx;
+  align-self: center;
+}
