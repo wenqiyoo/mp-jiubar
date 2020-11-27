@@ -6,7 +6,7 @@
   border-radius: 0 0 15rpx 15rpx;
   display: flex;
   align-items: center;
-  padding-left: 50rpx;
+  padding-left: 45rpx;
 }
 
 .h1 {
@@ -18,6 +18,7 @@
 .h2 {
   font-weight: bold;
   font-size: 1.2rem;
+  margin-left: 15px;
 }
 
 .description {
@@ -26,6 +27,7 @@
 
 .address {
   margin: 20rpx 0;
+  padding-left: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -41,7 +43,7 @@
   padding: 15rpx 25rpx;
   background-color: white;
   margin: 0 20rpx;
-  box-shadow: 3px 3px 5px rgba(200,200,200,0.3);
+  box-shadow: 0px 0px 15px rgba(200,200,200,0.6);
   border-radius: 10rpx;
 }
 
@@ -59,4 +61,50 @@
   position: fixed;
   bottom: 20px;
   min-width: 100%;
+}
+
+.description {
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(200,200,200,0.6);
+  height: 250px;
+  padding: 3px 10px;
+}
+
+.description-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.map {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  right: 45px;
+}
+
+.not-map {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+
+.catering-top {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(200,200,200,0.6);
+  margin-bottom: 5px;
+  padding: 5px 0;
+
+}
+
+
+.address {
+
 }

@@ -1,8 +1,15 @@
 /* pages/profile/profile.wxss */
 
-.profile-card-button {
+/* .profile-card-button {
   width: 50px;
   height: 50px;
+} */
+
+button { 
+  font-size: 1rem !important;
+  color: white;
+  background-color: #4C95FB;
+  padding: 7px 40px !important;
 }
 
 .body {
