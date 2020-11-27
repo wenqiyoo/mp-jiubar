@@ -1,45 +1,30 @@
 <view class="container">
 <form bindsubmit="formSubmit">
 <view class="section">
-    <view class="section__title">Title</view>
+    <view class="page-section-title">Title</view>
     <view class="section_input">
       <input name="title" placeholder="Title for Your Catering" />
     </view>
     
 </view> 
-      <view class="page-section">
+      <view class="section">
         <view class="page-section-title">Address</view>
-        <view class="weui-cells weui-cells_after-title">
-          <view class="weui-cell weui-cell_input">
-            <view class="weui-cell__bd" style="margin: 30rpx 0" >
               <input class="weui-input" name="address" placeholder="West Yan'an Road" />
-            </view>
-          </view>
-        </view>
       </view>
-      <view class="page-section">
+      <view class="section">
         <view class="page-section-title">Price</view>
-        <view class="weui-cells weui-cells_after-title">
-          <view class="weui-cell weui-cell_input">
-            <view class="weui-cell__bd" style="margin: 30rpx 0" >
               <input class="weui-input" name="price" placeholder="RMB299" />
-            </view>
-          </view>
-        </view>
       </view>
       <view class="description" >
         <view class="page-section-title">Description</view>
-        <view class="weui-cells weui-cells_after-title">
-          <view class="weui-cell weui-cell_input">
-            <view class="weui-cell__bd" style="margin: 30rpx 0" >
-              <input class="weui-input" name="description" placeholder="20 mini cheesecakes." />
-            </view>
-          </view>
+              <textarea class="weui-input" name="description"/>
+      </view>
+
+      <view wx:if="{{image}}">
+        <view class="container" id="image" >
+          <image src="{{image}}"></image>
         </view>
       </view>
-    <view class="container" id="image" >
-      <image src="{{image}}"></image>
-    </view>
     
     <button class="btn-img" bindtap='uploadPhoto'>Upload Your Image</button>
 

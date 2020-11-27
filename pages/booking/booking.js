@@ -68,8 +68,8 @@ Page({
       success(res) {
         console.log(res)
 
-        wx.switchTab({
-          url: '/pages/profile/profile',
+        wx.navigateTo({
+          url: '/pages/myReservation/myReservation',
         })
       }
 

@@ -25,13 +25,13 @@
         "selectedIconPath": "img/home.png",  
         "iconPath": "img/home.png",     
         "pagePath": "pages/index/index",
-        "text": "home"
+        "text": "Home"
     },
     {
       "selectedIconPath": "img/add.png",
       "iconPath": "img/add.png",
       "pagePath": "pages/new/new",
-      "text": "ADD"
+      "text": "Add"
     },
   
     {
