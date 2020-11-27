@@ -8,6 +8,12 @@ Page({
 
   },
 
+  makeCall: function(){
+    wx.makePhoneCall({
+      phoneNumber: '13818432014'
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */

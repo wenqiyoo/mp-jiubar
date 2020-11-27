@@ -4,21 +4,26 @@
 </view>
 
 <view class="container">
-  <view class="catering-info">
-    <view class="h2">{{title}}</view>
-    <view class="address">
-      <view class="address-text">
-        {{address}}
-        {{photos[0]}}
+  <view class="catering-top">
+    <view class="catering-info">
+      <view class="h2">{{title}}</view>
+      <view class="address">
+        <view class="address-text">
+          {{address}}
+        </view>
+        <view class="address-arrow">
+          <image class="map" src="/img/map.svg"/>
+          <image bindtap="makeCall" class="not-map" src="/img/phone.svg"/>
+        </view>
       </view>
-      <view class="address-arrow">
-        Map
-      </view>
-    </view>
-    <view class="description">
-      {{description}}
-    </view>
   </view>
+</view>
+    <view class="description">
+      <view class="description-title">Introduction</view>
+      <view class="description-content">
+      {{description}}
+      </view>
+    </view>
 </view>
 <view class="navbar">
   <view>
@@ -27,7 +32,7 @@
       <view>RMB {{price}}</view>
     </view>
     <view>
-      <button bindtap="gotobooking" data-id="{{id}}">Check Availability</button>
+      <button bindtap="gotobooking" data-id="{{id}}">Book Now</button>
     </view>
   </view>
 </view>
