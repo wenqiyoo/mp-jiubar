@@ -28,7 +28,7 @@ Page({
       description: description,
       price: price,
       address: address,
-      user_id: 1
+      user_id: user_id
     }
 
     console.log("------")

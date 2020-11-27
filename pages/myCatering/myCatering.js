@@ -22,8 +22,9 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-    const id = options.id
+  onLoad: function () {
+    const id = getApp().globalData.user.user.id
+    console.log(id)
     let page = this
     wx.request({
       url: `http://jiubar.herokuapp.com/api/v1/users/${id}/caterings`,

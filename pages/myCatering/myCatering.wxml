@@ -4,7 +4,7 @@
 <view class="h2">My Caterings</view>
 <view wx:for="{{ caterings }}" wx:for-item="catering">
 <view class="card-product" bindtap="switchToShow" data-id="{{catering.id}}">
-  <image mode="aspectFill" src="https://picsum.photos/600"/>
+  <image mode="aspectFill" src="{{catering.photos[0]}}"/>
   <view class="card-product-infos">
     <view>
       <view class="h1">{{ catering.title}}</view>
