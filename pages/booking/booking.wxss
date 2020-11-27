@@ -2,7 +2,7 @@
 .btn-flat {
   color: white;
   padding: 18rpx 30rpx;
-  border-radius: 4rpx;
+  border-radius: 10rpx;
   width: 150rpx;
   background:#4C95FB ;
   transition: background 0.3s ease;
@@ -11,10 +11,15 @@
   text-align: center;
 }
 .section {
-  margin-top: 50rpx; 
-  margin-bottom: 100rpx;
+  /* margin-top: 50rpx; 
+  margin-bottom: 100rpx; */
+  margin: 20rpx 20rpx 0 20rpx;
+  border-radius: 8px;
+  padding-top: 3px;
   color:#4C95FB ;
   font-weight: bold;
+  box-shadow: 0 0 15px rgba(200,200,200,0.3);
+  height: 150rpx;
 }
 .page-section-title {
   color:#4C95FB ;
@@ -30,4 +35,13 @@
   height: 200rpx;
   display: flex;
   justify-content: center;
+}
+
+.page-section {
+  background-color: white;
+  margin: 20rpx 20rpx 0 20rpx;
+  border-radius: 8px;
+  padding-top: 3px;
+  box-shadow: 0 0 15px rgba(200,200,200,0.3);
+
 }
