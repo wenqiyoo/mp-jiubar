@@ -1,6 +1,8 @@
 /* pages/myReservation/myReservation.wxss */
-.h0 {
-  color: skyblue;
+.h1 {
+  color: #4C95FB;
+  font-size: 40rpx;
+  font-weight: bold;
 }
 .h2 {
   font-size: 40rpx;
@@ -20,6 +22,7 @@ text {
   padding: 10rpx;
   border-radius: 10rpx;
   margin-top: 15rpx;
+  height: 150rpx;
 }
 .card-product > image {
   height: 100px;
@@ -47,4 +50,26 @@ text {
   position: absolute;  
   top: 70px;
   right: 15px;
+}
+.edit image {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
+
+.delete image {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: rgba(150,150,150,0.4);
 }

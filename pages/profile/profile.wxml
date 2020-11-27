@@ -15,7 +15,7 @@
     </view>
 
     <view class="options">
-      <navigator class="profile-options" data-id="{{user.id}}" url="#">My Reservations</navigator>
+      <navigator bindtap="switchToReservations" class="profile-options" data-id="{{user.id}}" data-id="{{user.id}}" url="#">My Reservations</navigator>
       <navigator class="profile-options" data-id="{{user.id}}" bindtap="switchToCaterings" url="#">My Caterings</navigator>
     </view>
   </view>

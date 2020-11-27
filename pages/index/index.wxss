@@ -1,7 +1,7 @@
 /* pages/landing/landing.wxss */
 
 .banner {
-  background-image: url(https://picsum.photos/601);
+  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4023556449,2908865951&fm=26&gp=0.jpg);
   background-size: cover;
   background-position: center;
   height: 350rpx;
