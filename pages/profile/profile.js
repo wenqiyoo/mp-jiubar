@@ -30,7 +30,10 @@ Page({
         console.log(res.data)
         const userInfo = res.data
         page.setData(userInfo)
-        getApp().globalData.user = userInfo
+        console.log(getApp().globalData.user)
+        console.log("-------------")
+        getApp().globalData.user = userInfo.user
+        console.log(getApp().globalData.user)
       }
     }),
     this.setData({
