@@ -16,7 +16,7 @@ Page({
     console.log(id)
     let page = this
     wx.request({
-      url: 'http://jiubar.herokuapp.com/api/v1/users/2/reservations',
+      url: `http://jiubar.herokuapp.com/api/v1/users/${id}/reservations`,
       method: 'GET',
       success(res){
         console.log(res.data)
