@@ -20,52 +20,45 @@
   margin:15rpx;
   font-size: 25rpx;
   border-radius: 15rpx;
-  margin-bottom: 20rpx;
 }
 
 .section{
   color:#4C95FB;
   font-weight: medium;
-  margin-bottom: 15rpx;
   text-align: center;
-  box-shadow: 0 0 15px rgba(200,200,200,0.3);
+  box-shadow: 0 0 15px rgba(200,200,200,0.5);
   padding-top: 0;
+  margin-bottom: 15rpx;
+  border-radius: 8px;
 }
 
 .section-input {
   color:#4C95FB ;
   font-weight: medium;
-  margin-bottom: 15rpx;
   text-align: center;
 }
 
 .page-section-title {
   color:#4C95FB ;
   font-weight: medium;
-  margin-bottom: 15rpx;
   text-align: center;
   font-weight: bold;
-}
-.weui-input {
-  margin-bottom: 20rpx;
-  text-align: center;
 }
 
 .page-section {
   background-color: white;
-  margin: 0rpx 5rpx 0 5rpx;
   border-radius: 8px;
   padding-top: 3px;
   box-shadow: 0 0 15px rgba(200,200,200,0.3);
 }
-.description{
+.description {
   border-radius: 10rpx;
   height: 400rpx;
   width: 100%;
   box-shadow: 0 0 15px rgba(200,200,200,0.3);
   padding-top: 3px;
-  margin: 0rpx 5rpx 0 5rpx;
   background-color: white;
+  text-align: center;
 }
 
 image {

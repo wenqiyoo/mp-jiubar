@@ -30,3 +30,16 @@ text {
   display: flex;
   justify-content: space-between;
 }
+
+.card {
+  position: relative;
+}
+.delete {
+  z-index: 2;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}

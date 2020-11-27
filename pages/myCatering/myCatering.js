@@ -8,6 +8,33 @@ Page({
 
   },
 
+  deleteCatering: function(event){
+    console.log(event)
+    const id = event.currentTarget.dataset.id
+    wx.showModal({
+      title: 'Delete',
+      content: 'Are you sure?',
+      success (res) {
+        if (res.confirm) {
+          wx.request({
+            url: `http://jiubar.herokuapp.com/api/v1/caterings/${id}/`,
+            method: 'DELETE',
+            success(res){
+              console.log(res)
+              wx.navigateTo({
+                url: '/pages/myCatering/myCatering',
+              })
+      
+            }
+          })
+        } else if (res.cancel) {
+          console.log('"Cancel" is tapped')
+        }
+      }
+    })
+//// modal ends    
+  },
+
   switchToShow: function(event) {
     const id = event.currentTarget.dataset.id
     console.log(id)
