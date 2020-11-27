@@ -23,7 +23,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function () {
-    const id = getApp().globalData.user.user.id
+    const id = getApp().globalData.user.id
     console.log(id)
     let page = this
     wx.request({
