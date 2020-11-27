@@ -13,7 +13,8 @@
     "pages/tabOne/tabOne",
     "pages/tabTwo/tabTwo",
     "pages/tabThree/tabThree",
-    "pages/checkout/checkout"
+    "pages/checkout/checkout",
+    "pages/reservation/reservation"
   ],
   "tabBar": {
     "color": "#a9b7b7",
