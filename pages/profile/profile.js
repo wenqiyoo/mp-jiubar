@@ -50,6 +50,13 @@ switchToCaterings: function(event) {
   })
 
 },
+switchToReservations: function(event) {
+  console.log(event)
+  const id = event.currentTarget.dataset.id
+  wx.navigateTo({
+    url: `/pages/myReservation/myReservation?id=${id}`,
+  })
+},
 
 
   /**

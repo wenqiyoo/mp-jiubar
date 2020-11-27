@@ -60,7 +60,7 @@ Page({
       catering_id: catering_id,
       user_id: userInfo
     }
-
+    console.log(reservation)
     wx.request({
       url: `http://jiubar.herokuapp.com/api/v1/caterings/${catering_id}/reservations/`,
       data: reservation,

@@ -12,6 +12,23 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    const id = getApp().globalData.user.id
+    console.log(id)
+    let page = this
+    wx.request({
+      url: 'http://jiubar.herokuapp.com/api/v1/users/2/reservations',
+      method: 'GET',
+      success(res){
+        console.log(res.data)
+        const reservations = res.data
+        for (let index = 0; index < reservations.length; index++) {
+          let element = reservations[index];
+          element.time = new Date(element.time).toLocaleTimeString('it-IT')
+          element.end_time = new Date(element.end_time).toLocaleTimeString('it-IT')
+        }
+        page.setData({reservations})
+      }
+    })
 
   },
 
